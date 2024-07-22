@@ -1,0 +1,63 @@
+<!-- HTML SIDEBAR -->
+
+<h1>Países</h1>
+<hr>
+
+<!-- LISTA DE OPCIONES DEL SIDEBAR -->
+<ul class="list-group">
+
+  <!-- OPCION VER HOME PAGE -->
+  <!-- Para usar lo relacionado con "router" se debe haber importado el modulo "app-routing.module" -->
+  <li
+    [routerLink]="''"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    class="list-group-item">
+    Home page
+  </li>
+
+
+
+  <!-- OPCION VER ABOUT PAGE -->
+  <li
+    [routerLink]="'about'"
+    routerLinkActive="active"
+    class="list-group-item">
+    About page
+  </li>
+
+
+
+  <!-- OPCION VER CONTACT PAGE -->
+  <li
+    [routerLink]="'contact'"
+    routerLinkActive="active"
+    class="list-group-item">
+    Contact page
+  </li>
+
+  <!-- OPCION VER POR CAPITAL -->
+  <li
+    [routerLink]="'countries/by-capital'"
+    routerLinkActive="active"
+    class="list-group-item">
+    Por capital
+  </li>
+
+  <!-- OPCION VER POR PAIS -->
+  <li
+    [routerLink]="'countries/by-country'"
+    routerLinkActive="active"
+    class="list-group-item">
+    Por país
+  </li>
+  
+  <!-- OPCION VER POR REGION -->
+  <li
+    [routerLink]="'countries/by-region'"
+    routerLinkActive="active"
+    class="list-group-item">
+    Por region
+  </li>
+
+</ul>
