@@ -9,22 +9,22 @@ import { CountriesModule } from './countries/countries.module';
 // Se definen cada una de las rutas:
 const routes: Routes = [ // Esta interfaz viene incluida en Angular
 
-  // RUTA A HOME-PAGE
-  {
-    path: '', // Queremos que cuando el URL inicial sea el de home
-    component: HomePageComponent // Componente, en este caso pagina, a mostrar
-  },
+  // // RUTA A HOME-PAGE
+  // {
+  //   path: '', // Queremos que cuando el URL inicial sea el de home
+  //   component: HomePageComponent // Componente, en este caso pagina, a mostrar
+  // },
 
-  // RUTA A ABOUT-PAGE
-  {
-    path: 'about', // Segmento que se le agrega a la URL, especifica la pagina a mostrar
-    component: AboutPageComponent // Componente, en este caso pagina, a mostrar
-  },
+  // // RUTA A ABOUT-PAGE
+  // {
+  //   path: 'about', // Segmento que se le agrega a la URL, especifica la pagina a mostrar
+  //   component: AboutPageComponent // Componente, en este caso pagina, a mostrar
+  // },
 
-  // RUTA A CONTACT-PAGE
+  // // RUTA A CONTACT-PAGE
   {
-    path: 'contact', // Segmento que se le agrega a la URL, especifica la pagina a mostrar
-    component: ContactPageComponent // Componente, en este caso pagina, a mostrar
+     path: 'contact', // Segmento que se le agrega a la URL, especifica la pagina a mostrar
+     component: ContactPageComponent // Componente, en este caso pagina, a mostrar
   },
 
   // RUTA AL MODULO COUNTRIES
@@ -36,8 +36,7 @@ const routes: Routes = [ // Esta interfaz viene incluida en Angular
   // RUTA POR DEFAULT (SINO HAY NINGUN PATH O CUALQUIER OTRO CASO)
   {
     path: '**', // Segmento que se le agrega a la URL, especifica la pagina a mostrar
-    redirectTo: ''
-    // component: HomePageComponent // Componente, en este caso pagina, a mostrar
+    redirectTo: 'countries'
   }
 
 ]

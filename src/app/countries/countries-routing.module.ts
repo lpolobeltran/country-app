@@ -25,6 +25,10 @@ const routes: Routes = [ // Esta interfaz viene incluida en Angular
     path: 'by/:id', // se pondra un ID de manera dinamica
     component: CountryPageComponent,
   },
+  {
+    path: '**', // Si noy corresponde a ningun path
+    redirectTo: 'by-capital'
+  }
 
 ]
 

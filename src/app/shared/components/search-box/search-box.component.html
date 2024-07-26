@@ -1,0 +1,14 @@
+<input
+
+  type="text"
+  [placeholder]="placeholder"
+  class="form-control"
+  (keyup.enter)="emitValue(txtInput.value)"
+  #txtInput
+
+>
+
+<!-- Emitir del hijo al padre:
+ 1. El hijo crea antena para enviar datos (eventos) al padre - @output eventEmitter
+ 2. El hijo escucha lo que pasa e invoca a un metodo para avisar al padre, le pasa un argumento - linea 6
+ 3. En el .ts se ejecuta el metodo invocado, el cual emite al padre el argumento dado-->
